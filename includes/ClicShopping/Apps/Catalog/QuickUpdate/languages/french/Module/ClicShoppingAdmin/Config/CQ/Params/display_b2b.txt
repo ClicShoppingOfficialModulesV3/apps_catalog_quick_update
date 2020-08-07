@@ -1,0 +1,6 @@
+cfg_quick_update_display_b2b_title = Souhaitez vous afficher les groupes clients B2B
+cfg_quick_update_display_b2b_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_b2b_true = True
+cfg_quick_update_display_b2b_false = False
+

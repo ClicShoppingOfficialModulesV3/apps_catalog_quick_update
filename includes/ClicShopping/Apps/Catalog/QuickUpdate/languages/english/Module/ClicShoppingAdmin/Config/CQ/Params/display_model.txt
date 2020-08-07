@@ -1,0 +1,6 @@
+cfg_quick_update_display_model_title = Do you want accept to display the product model ?
+cfg_quick_update_display_model_description = Set True to enable or not the module
+
+cfg_quick_update_display_model_true = True
+cfg_quick_update_display_model_false = False
+

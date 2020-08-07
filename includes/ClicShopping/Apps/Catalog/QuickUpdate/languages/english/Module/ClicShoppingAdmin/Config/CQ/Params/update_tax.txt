@@ -1,0 +1,6 @@
+cfg_quick_update_update_tax_title = Do you want accept to update the product tax ?
+cfg_quick_update_update_tax_description = Set True to enable or not the module
+
+cfg_quick_update_update_tax_true = True
+cfg_quick_update_update_tax_false = False
+

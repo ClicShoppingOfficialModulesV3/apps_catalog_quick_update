@@ -1,0 +1,6 @@
+cfg_quick_update_display_tax_mouse_over_title = Do you want accept to display the tax when the mouse is over ?
+cfg_quick_update_display_tax_mouse_over_description = Set True to enable or not the module
+
+cfg_quick_update_display_tax_mouse_over_true = True
+cfg_quick_update_display_tax_mouse_over_false = False
+

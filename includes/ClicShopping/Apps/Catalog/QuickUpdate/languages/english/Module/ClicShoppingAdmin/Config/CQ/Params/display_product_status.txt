@@ -1,0 +1,6 @@
+cfg_quick_update_display_product_status_title = Do you want accept to update the product status ?
+cfg_quick_update_display_product_status_description = Set True to enable or not the module
+
+cfg_quick_update_display_product_status_true = True
+cfg_quick_update_display_product_status_false = False
+

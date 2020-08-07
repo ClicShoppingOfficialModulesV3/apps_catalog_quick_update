@@ -1,0 +1,6 @@
+cfg_quick_update_update_products_name_title = Do you want accept to update the product name ?
+cfg_quick_update_update_products_name_description = Set True to enable or not the module
+
+cfg_quick_update_update_products_name_true = True
+cfg_quick_update_update_products_name_false = False
+

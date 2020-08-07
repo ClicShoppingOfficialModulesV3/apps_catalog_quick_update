@@ -1,0 +1,6 @@
+cfg_quick_update_display_only_online_title = Souhaitez vous afficher la uniquement disponible en ligne
+cfg_quick_update_display_only_online_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_only_online_true = True
+cfg_quick_update_display_only_online_false = False
+

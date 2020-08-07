@@ -1,0 +1,6 @@
+cfg_quick_update_display_supplier_title = Do you want accept to display the product supplier ?
+cfg_quick_update_display_supplier_description = Set True to enable or not the module
+
+cfg_quick_update_display_supplier_true = True
+cfg_quick_update_display_supplier_false = False
+

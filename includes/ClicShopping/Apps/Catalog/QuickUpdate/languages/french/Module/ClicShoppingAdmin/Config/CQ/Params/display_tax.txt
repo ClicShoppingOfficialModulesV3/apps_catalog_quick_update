@@ -1,0 +1,6 @@
+cfg_quick_update_display_tax_title = Souhaitez vous afficher la taxe du produit
+cfg_quick_update_display_tax_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_tax_true = True
+cfg_quick_update_display_tax_false = False
+

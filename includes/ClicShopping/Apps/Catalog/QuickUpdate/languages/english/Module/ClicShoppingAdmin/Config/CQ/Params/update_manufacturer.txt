@@ -1,0 +1,6 @@
+cfg_quick_update_update_manufacturer_title = Do you want accept to update the product manufacturer ?
+cfg_quick_update_update_manufacturer_description = Set True to enable or not the module
+
+cfg_quick_update_update_manufacturer_true = True
+cfg_quick_update_update_manufacturer_false = False
+

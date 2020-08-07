@@ -1,0 +1,6 @@
+cfg_quick_update_display_preview_title = Souhaitez vous afficher la preview du produit
+cfg_quick_update_display_preview_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_preview_true = True
+cfg_quick_update_display_preview_false = False
+

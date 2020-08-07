@@ -1,0 +1,6 @@
+cfg_quick_update_display_product_status_title = Souhaitez vous autoriser la mise à jour du statut du produit
+cfg_quick_update_display_product_status_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_product_status_true = True
+cfg_quick_update_display_product_status_false = False
+

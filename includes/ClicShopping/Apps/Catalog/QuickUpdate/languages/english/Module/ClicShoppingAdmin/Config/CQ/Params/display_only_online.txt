@@ -1,0 +1,6 @@
+cfg_quick_update_display_only_online_title = Do you want accept to display the product only_online ?
+cfg_quick_update_display_only_online_description = Set True to enable or not the module
+
+cfg_quick_update_display_only_online_true = True
+cfg_quick_update_display_only_online_false = False
+

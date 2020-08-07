@@ -1,0 +1,6 @@
+cfg_quick_update_display_manufacturer_title = Souhaitez vous afficher la marque du produit
+cfg_quick_update_display_manufacturer_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_manufacturer_true = True
+cfg_quick_update_display_manufacturer_false = False
+

@@ -1,0 +1,6 @@
+cfg_quick_update_display_min_order_title = Do you want accept to update the order minimum ?
+cfg_quick_update_display_min_order_description = Set True to enable or not the module
+
+cfg_quick_update_display_min_order_true = True
+cfg_quick_update_display_min_order_false = False
+

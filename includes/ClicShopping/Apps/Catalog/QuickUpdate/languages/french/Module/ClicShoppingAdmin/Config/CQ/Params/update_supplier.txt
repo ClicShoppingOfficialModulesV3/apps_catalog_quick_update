@@ -1,0 +1,6 @@
+cfg_quick_update_update_supplier_title = Souhaitez vous autoriser la mise à jour du fournisseur du produit
+cfg_quick_update_update_supplier_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_update_supplier_true = True
+cfg_quick_update_update_supplier_false = False
+

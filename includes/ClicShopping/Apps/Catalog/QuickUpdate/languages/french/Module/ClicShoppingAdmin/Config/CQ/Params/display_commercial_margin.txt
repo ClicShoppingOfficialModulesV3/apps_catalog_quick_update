@@ -1,0 +1,6 @@
+cfg_quick_update_display_commercial_margin_title = Souhaitez vous afficher la marge commerciale du produit
+cfg_quick_update_display_commercial_margin_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_commercial_margin_true = True
+cfg_quick_update_display_commercial_margin_false = False
+

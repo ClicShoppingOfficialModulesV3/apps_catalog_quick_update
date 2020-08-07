@@ -1,0 +1,6 @@
+cfg_quick_update_display_weight_title = Souhaitez vous autoriser la mise à jour du poids du produit
+cfg_quick_update_display_weight_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_weight_true = True
+cfg_quick_update_display_weight_false = False
+

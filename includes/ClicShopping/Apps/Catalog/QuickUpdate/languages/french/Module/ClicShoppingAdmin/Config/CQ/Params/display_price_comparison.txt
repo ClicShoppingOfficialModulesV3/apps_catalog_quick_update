@@ -1,0 +1,6 @@
+cfg_quick_update_display_price_comparison_title = Souhaitez vous autoriser la comparaison du prix
+cfg_quick_update_display_price_comparison_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_price_comparison_true = True
+cfg_quick_update_display_price_comparison_false = False
+

@@ -1,0 +1,90 @@
+heading_title = Quick Update
+module_cq_title = Quick Update
+module_cq_short_title = Quick Update
+
+text_quick_update =  Quick Update
+text_configure =  configure App Module
+
+text_intro = This app allow you to include a Quick Update form. <br /><br />
+- Click on Configure to access / install or uninstall the app.<br />
+- The App is located in Catalog<br />
+
+module_cq_introduction = The install process create the database settings for this module and the access menu
+
+button_install_title = Install
+button_configure = Configure
+button_save = Save
+button_dialog_uninstall =  Uninstall
+button_uninstall =  Uninstall
+button_delete = Delete
+button_quick_update = Quick Update
+button_cancel = Cancel
+button_new = New supplier
+button_update = Update
+button_print_text = Print
+button_reset = Reset
+button_preview = Preview
+
+dialog_uninstall_title = Uninstall
+dialog_uninstall_body = Do you want to install this App ?
+dialog_uninstall_title = Uninstall Module?
+dialog_uninstall_body = Are you sure you want to uninstall this module?
+
+alert_module_install_success = Module has been successfully installed.
+alert_module_uninstall_success = Module has been successfully uninstalled.
+alert_cfg_saved_success = Configuration parameters have been successfully saved.
+
+text_result_page = Page {{listing_from}} of {{listing_total}}
+text_display_number_of_link = Display <strong>{{listing_from}}</strong> to <strong>{{listing_to}}</strong> (on <strong>{{listing_total}}</strong>)
+
+
+warning_message = Update your modifications before all changing display (sorting, changing page # ...
+top_bar_title = Quick Update
+
+text_marge_info = Modify by commercial margin, if you check this box, your products will be stroked at the rates given. To stroke to 25%, means that the price is marked up of 33%.
+text_products_updated = Item(s) Updated!
+text_image_preview = Preview item
+text_image_switch_edit = Switch to complete edit
+text_qty_updated = Value(s) changed
+text_input_spec_price = <strong>Increase / reduction and click on preview</strong><br /><i>(Example : 10, 15%, -20, -25%..)</i>
+text_spec_price_info_update = <strong>Want strip the prices that you do not wish to modify<br />or all to cancel while clicking on the button "Cancel"
+text_maxi_row_by_page = Max. of lines per page :
+text_specials_products = Special Product Price !
+text_all_manufacturers = All brands
+text_all_suppliers = All suppliers
+text_insert =
+text_search = Search (product or model)
+no_price = -- N/A --
+no_tax_text = No Tax
+no_manufacturer = None
+no_supplier = None
+table_heading_categories = Category
+table_heading_price_comparison = Comparison (No/Yes)
+table_heading_model = Model
+table_heading_products = Name
+table_heading_price = Public price
+table_heading_tax = Tax
+table_heading_weight = Weight
+table_heading_quantity = Stock
+table_heading_min_order_quantity = Min. order qty
+table_heading_status = Status Off/On
+table_heading_products_only_online = Exclusivity web (No/yes)
+table_heading_manufacturers = Brands
+table_heading_suppliers = Suppliers
+table_heading_image = Image
+display_categories = Select category :
+display_manufacturers = Select brands :
+display_suppliers = Select suppliers :
+
+total_cost = Public price TAX inc.
+text_sort_all = Sort
+text_descendingly = - Descendingly
+text_ascendingly = - Ascendingly
+text_by =  by
+edit = Print
+text_quick_updates_specials = You cannot modify the public price because the product is currently in promotion.
+text_quick_updates_locked = You cannot modify the public price because the prices in mode B2B are in manual mode. Please publish the card directly produces to carry out your modifications.
+text_no_taxe = &nbsp;TAX exc.
+
+text_products_updated = Products updated
+text_qty_updated = Quantity updated

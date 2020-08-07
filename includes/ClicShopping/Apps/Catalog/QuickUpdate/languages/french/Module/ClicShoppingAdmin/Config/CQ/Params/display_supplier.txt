@@ -1,0 +1,6 @@
+cfg_quick_update_display_supplier_title = Souhaitez vous afficher le fournisseur du produit
+cfg_quick_update_display_supplier_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_supplier_true = True
+cfg_quick_update_display_supplier_false = False
+

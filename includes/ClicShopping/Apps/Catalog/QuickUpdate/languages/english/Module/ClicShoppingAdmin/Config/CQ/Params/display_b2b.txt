@@ -1,0 +1,6 @@
+cfg_quick_update_display_b2b_title = Do you want accept to display the customer groups b2b ?
+cfg_quick_update_display_b2b_description = Set True to enable or not the module
+
+cfg_quick_update_display_b2b_true = True
+cfg_quick_update_display_b2b_false = False
+

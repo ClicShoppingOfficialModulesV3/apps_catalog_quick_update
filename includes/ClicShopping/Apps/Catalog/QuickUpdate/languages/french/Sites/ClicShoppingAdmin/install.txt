@@ -1,0 +1,1 @@
+title_menu = Mise à jour rapide

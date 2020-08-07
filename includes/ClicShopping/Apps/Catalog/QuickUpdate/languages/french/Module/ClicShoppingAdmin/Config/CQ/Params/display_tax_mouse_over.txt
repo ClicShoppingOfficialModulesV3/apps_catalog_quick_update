@@ -1,0 +1,6 @@
+cfg_quick_update_display_tax_mouse_over_title = Souhaitez vous afficher la taxe lors du sur lignage du produit
+cfg_quick_update_display_tax_mouse_over_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_tax_mouse_over_true = True
+cfg_quick_update_display_tax_mouse_over_false = False
+

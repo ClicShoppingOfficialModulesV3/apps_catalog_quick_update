@@ -1,0 +1,6 @@
+cfg_quick_update_display_min_order_title = Souhaitez vous autoriser la mise à jour de la commande minimale
+cfg_quick_update_display_min_order_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_display_min_order_true = True
+cfg_quick_update_display_min_order_false = False
+

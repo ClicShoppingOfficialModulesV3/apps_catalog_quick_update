@@ -1,0 +1,6 @@
+cfg_quick_update_update_products_name_title = Souhaitez vous autoriser la mise à jour du nom du produit
+cfg_quick_update_update_products_name_description = Sélectionner True pour afficher le module
+
+cfg_quick_update_update_products_name_true = True
+cfg_quick_update_update_products_name_false = False
+

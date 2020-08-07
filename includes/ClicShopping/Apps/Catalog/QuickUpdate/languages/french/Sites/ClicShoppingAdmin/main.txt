@@ -1,0 +1,96 @@
+heading_title =  Mise à jour rapide
+module_cq_title = Mise à jour rapide
+module_cq_short_title = Mise à jour rapide
+
+text_quick_update = Mise à jour rapide
+text_configure =  Configurer App Module
+
+text_intro = Cette app vous permet d'accéder à un formulaire de gestion des mises à jour rapide<br /><br />
+- Cliquez sur configurer pour accéder à l'installation ou la désinstallation l'app.<br />
+- L'App se situe dans le menu Catalogue <br />
+
+module_cq_introduction = Le processus dinstall crée la base de données et le menu pour ce module
+
+button_install_title = Installer
+button_configure = Configurer
+button_save = Sauver
+button_dialog_uninstall =  Désinstaller
+button_uninstall =  Désinstaller
+button_delete = Supprimer
+button_quick_update = Mise à jour rapide
+button_cancel = Annuler
+button_new = Nouvelle marque
+button_update = Mettre à jour
+button_print_text = Imprimer
+button_reset = Reset
+button_preview = Prévisualiser
+
+dialog_uninstall_title = Désinstaller
+dialog_uninstall_body = Souhaitez-vous installer cette App ?
+dialog_uninstall_title = Désinstaller le module?
+dialog_uninstall_body = Etes vous sur de désinstaller ce module?
+
+alert_module_install_success = Le module a été installée.
+alert_module_uninstall_success = Le module a été désinstallée.
+alert_cfg_saved_success = les paramètres de configuration ont été mises à jour.
+
+text_result_page = Page {{listing_from}} sur {{listing_total}}
+text_display_number_of_link = Affiche <strong>{{listing_from}}</strong> à <strong>{{listing_to}}</strong> (sur <strong>{{listing_total}}</strong>)
+
+warning_message = Enregistrez vos modifications AVANT tout changement d'affichage (tri, page, catégorie, marque...)
+
+top_bar_title = Mise à jour rapide
+
+text_all_manufacturers = Toutes les marques
+text_all_suppliers = tous les fournisseurs
+
+text_marge_info = Modifie la marge, vous pouvez augmenter ou réduire cette marge
+text_products_updated = Article(s) Mis à Jour!
+text_image_preview = Visualiser
+text_image_switch_edit = Bascule vers l'édition de la fiche produit
+text_qty_updated = modification(s)
+text_input_spec_price = <strong>Augmenter / diminuer les tarifs (cliquez sur visualiser) :</strong><br /><i>(Exemple: 10, 15%, -20, -25%..)</i>
+text_spec_price_info_update = <strong>Veuillez décochez les prix que vous ne souhaitez pas modifier<br />ou tout annuler en cliquant sur le bouton "Annuler"
+text_maxi_row_by_page = Lignes à afficher
+text_specials_products = Produit en Promotion !
+text_all_manufacturers = Toutes les marques
+text_all_suppliers = Tous les fournisseurs
+text_insert =
+
+text_search = Rechercher (produit ou réf.)
+
+no_price = -- NC --
+no_tax_text = Aucune
+no_manufacturer = Aucun
+no_supplier = Aucun
+table_heading_categories = Catégorie
+table_heading_price_comparison = Comparateurs (Oui/Non)
+table_heading_model = Réf
+table_heading_products = Nom
+table_heading_price = Prix public
+table_heading_tax = Type taxe
+table_heading_weight = Poids
+table_heading_quantity = Stock
+table_heading_min_order_quantity = Qté min cmd
+table_heading_status = Statut Off/On
+table_heading_products_only_online = Exclusivif web (Non/Oui)
+table_heading_manufacturers = Marques
+table_heading_suppliers = Fournisseurs
+table_heading_image = Image
+
+display_categories = Catégories
+display_manufacturers = Marques
+display_suppliers = Fournisseurs
+
+total_cost = Prix public Toutes taxes
+text_sort_all = Trié par
+text_descendingly = - Descendant
+text_ascendingly = - Ascendant
+text_by =  par
+edit = Imprimer
+text_quick_updates_specials = Vous ne pouvez pas modifier le prix public car le produit est actuellement en promotion.
+text_quick_updates_locked = Vous ne pouvez pas modifier le prix public car les prix en mode B2B sont en mode manuel. Veuillez éditer directement la fiche produit pour effectuer vos modifications.
+text_no_taxe = &nbsp;HT
+
+text_products_updated = Produits mis à jour
+text_qty_updated = quantités mise à jour
