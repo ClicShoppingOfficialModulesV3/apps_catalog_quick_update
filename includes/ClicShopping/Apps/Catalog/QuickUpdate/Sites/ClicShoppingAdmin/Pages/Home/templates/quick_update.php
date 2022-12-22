@@ -211,7 +211,7 @@
             class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'categories/priceupdate.gif', $CLICSHOPPING_QuickUpdate->getDef('heading_title'), '40', '40'); ?></span>
           <span
             class="col-md-1 pageHeading"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('heading_title'); ?></span>
-          <span class="col-md-2 text-md-center float-md-left">
+          <span class="col-md-2 text-center float-start">
 <?php
   // ----------------------------
   // --------- Suppliers
@@ -223,13 +223,13 @@
     echo HTML::hiddenField('cPath', $current_category_id);
     echo HTML::hiddenField('manufacturer', $manufacturer);
     ?>
-    <span class="smallText text-md-center"><?php echo $CLICSHOPPING_Supplier->getSuppliersList(); ?></span>
+    <span class="smallText text-center"><?php echo $CLICSHOPPING_Supplier->getSuppliersList(); ?></span>
     </form>
     <?php
   }
 ?>
           </span>
-          <span class="col-md-2 text-md-center float-md-left">
+          <span class="col-md-2 text-center float-start">
 <?php
   // ----------------------------
   // --------- Manufacturer
@@ -241,20 +241,20 @@
     echo HTML::hiddenField('cPath', $current_category_id);
     echo HTML::hiddenField('supplier', $supplier);
     ?>
-    <span class="smallText text-md-center"><?php echo $CLICSHOPPING_Manufacturer->getManufacturersList(); ?></span>
+    <span class="smallText text-center"><?php echo $CLICSHOPPING_Manufacturer->getManufacturersList(); ?></span>
     </form>
     <?php
   }
 ?>
             </span>
-          <span class="col-md-2 text-md-center">
+          <span class="col-md-2 text-center">
 <?php
   echo HTML::form('search', $CLICSHOPPING_QuickUpdate->link('QuickUpdate'), 'post', 'class="form-inline"', ['session_id' => true]);
   echo HTML::inputField('search', '', 'id="search" placeholder="' . $CLICSHOPPING_QuickUpdate->getDef('text_search') . '"');
 ?>
              </form>
            </span>
-          <span class="col-md-4 text-md-right float-md-right">
+          <span class="col-md-4 text-end float-end">
 <?php
   echo HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_configure'), null, $CLICSHOPPING_QuickUpdate->link('Configure'), 'primary') . ' ';
   echo '<a href="javascript:window.print()"><button type="button" class="btn btn-info">' . $CLICSHOPPING_QuickUpdate->getDef('button_print_text') . '</button></a> ';
@@ -271,7 +271,7 @@
   <div class="col-md-12">
     <div class="card card-block headerCard">
       <div class="row">
-        <div class="col-md-2 text-md-center float-md-left">
+        <div class="col-md-2 text-center float-start">
           <?php
             echo $CLICSHOPPING_QuickUpdate->getDef('text_maxi_row_by_page');
             // ----------------------------
@@ -288,7 +288,7 @@
           </form>
         </div>
 
-        <div class="col-md-2 text-md-center float-md-right">
+        <div class="col-md-2 text-center float-end">
 
           <?php
             echo $CLICSHOPPING_QuickUpdate->getDef('display_categories');
@@ -306,7 +306,7 @@
           </form>
         </div>
 
-        <div class="col-md-4 text-md-center float-md-right">
+        <div class="col-md-4 text-center float-end">
           <?php
             echo HTML::form('spec_price', $CLICSHOPPING_QuickUpdate->link('QuickUpdate&Calcul&page=' . $page . '&sort_by=' . $sort_by . '&cPath=' . $current_category_id . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier));
             if ($preview_global_price != 'true') {
@@ -699,7 +699,7 @@ switch (browser_family) {
             $listingTotalRow = $Qproducts->getPageSetTotalRows();
           ?>
           <tr>
-            <td class="text-md-center">
+            <td class="text-center">
               <table width="100%" cellspacing="0" cellpadding="0" border="1" bgcolor="#F3F9FB" bordercolor="#D1E7EF"
                      height="100" valgin="top">
                 <tr>
@@ -722,7 +722,7 @@ switch (browser_family) {
                                   ?>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle" height="25">
+                              <td class="text-center" valign="middle" height="25">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -738,9 +738,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_model ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_model') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_model DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_model') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_model'); ?></td>
 
                                         <?php
@@ -749,7 +749,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -764,14 +764,14 @@ switch (browser_family) {
                                         $icon_down = 'icon_down.gif';
                                       }
                                     ?>
-                                    <td class="text-md-center"
+                                    <td class="text-center"
                                         valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=pd.products_name ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_products') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=pd.products_name DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_products') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
-                                    <td class="text-md-center"
+                                    <td class="text-center"
                                         valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_products'); ?></td>
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -787,9 +787,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_status ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'OFF ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_status DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'ON ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_status'); ?></td>
                                         <?php
                                       }
@@ -797,7 +797,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -813,9 +813,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_price_comparison ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'OFF ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_price_comparison DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'ON ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_price_comparison'); ?></td>
                                         <?php
                                       }
@@ -823,7 +823,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -839,9 +839,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_only_online ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'OFF ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_only_online DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . 'ON ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_products_only_online'); ?></td>
                                         <?php
                                       }
@@ -849,7 +849,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -865,9 +865,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_weight ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_weight') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_weight DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_weight') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_weight'); ?></td>
 
                                         <?php
@@ -876,7 +876,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -892,7 +892,7 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-right"
+                                        <td class="text-end"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_quantity ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_quantity') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_quantity DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_quantity') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
                                         <td class="text-md-cright"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_quantity'); ?></td>
@@ -902,7 +902,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -918,9 +918,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_min_qty_order ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_min_order_quantity') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_min_qty_order DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_min_order_quantity') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-right"
+                                        <td class="text-end"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_min_order_quantity'); ?></td>
                                         <?php
                                       }
@@ -928,7 +928,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -954,7 +954,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -980,7 +980,7 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -1006,11 +1006,11 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <td
-                                      class="text-md-center"><?php echo $CLICSHOPPING_QuickUpdate->getDef('table_heading_price'); ?></td>
+                                      class="text-center"><?php echo $CLICSHOPPING_QuickUpdate->getDef('table_heading_price'); ?></td>
                                   </tr>
                                 </table>
                               </td>
@@ -1029,10 +1029,10 @@ switch (browser_family) {
                                     while ($QcustomersGroup->fetch()) {
                                       if ($QcustomersGroup->rowCount() > 0) {
                                         ?>
-                                        <td class="text-md-right" valign="middle">
+                                        <td class="text-end" valign="middle">
                                           <table border="0" cellspacing="0" cellpadding="0">
                                             <tr>
-                                              <td class="text-md-right"
+                                              <td class="text-end"
                                                   valign="middle"><?php echo $QcustomersGroup->value('customers_group_name'); ?></td>
                                             </tr>
                                           </table>
@@ -1043,7 +1043,7 @@ switch (browser_family) {
                                   }
                                 }
                               ?>
-                              <td class="text-md-center" valign="middle">
+                              <td class="text-center" valign="middle">
                                 <table border="0" cellspacing="0" cellpadding="0">
                                   <tr>
                                     <?php
@@ -1059,9 +1059,9 @@ switch (browser_family) {
                                           $icon_down = 'icon_down.gif';
                                         }
                                         ?>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo "<a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_tax_class_id ASC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_up, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_tax') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_ascendingly')) . "</a><a href=\"" . $CLICSHOPPING_QuickUpdate->link('QuickUpdate&cPath=' . $current_category_id . '&sort_by=p.products_tax_class_id DESC&page=' . $page . '&row_by_page=' . $row_by_page . '&manufacturer=' . $manufacturer . '&supplier=' . $supplier) . "\" >" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/' . $icon_down, $CLICSHOPPING_QuickUpdate->getDef('text_sort_all') . $CLICSHOPPING_QuickUpdate->getDef('table_heading_tax') . ' ' . $CLICSHOPPING_QuickUpdate->getDef('text_descendingly')) . "</a>"; ?></td>
-                                        <td class="text-md-center"
+                                        <td class="text-center"
                                             valign="middle"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('table_heading_tax'); ?></td>
                                         <?php
                                       }
@@ -1069,8 +1069,8 @@ switch (browser_family) {
                                   </tr>
                                 </table>
                               </td>
-                              <td class="text-md-center" valign="middle"></td>
-                              <td class="text-md-center" valign="middle"></td>
+                              <td class="text-center" valign="middle"></td>
+                              <td class="text-center" valign="middle"></td>
                             </tr>
                             <tr class="datatableRow">
                               <?php
@@ -1179,7 +1179,7 @@ switch (browser_family) {
 // Affiche la reference du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_MODEL == 'True') {
                                     if (CLICSHOPPING_APP_QUICKUPDATE_CQ_UPDATE_MODEL == 'True') {
-                                      echo "<td class=\"text-md-center\"><input type=\"text\" size=\"10\" name=\"product_new_model[" . $products['products_id'] . "]\" value=\"" . $products['products_model'] . "\"></td>";
+                                      echo "<td class=\"text-center\"><input type=\"text\" size=\"10\" name=\"product_new_model[" . $products['products_id'] . "]\" value=\"" . $products['products_model'] . "\"></td>";
                                     } else {
                                       echo "<td>" . $products['products_model'] . "</td>";
                                     }
@@ -1189,7 +1189,7 @@ switch (browser_family) {
 
 // Affiche le nom du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_UPDATE_PRODUCTS_NAME == 'true') {
-                                    echo "<td class=\"text-md-center\"><input type=\"text\" size=\"20\" name=\"product_new_name[" . $products['products_id'] . "]\" value=\"" . $products['products_name'] . "\"></td>";
+                                    echo "<td class=\"text-center\"><input type=\"text\" size=\"20\" name=\"product_new_name[" . $products['products_id'] . "]\" value=\"" . $products['products_name'] . "\"></td>";
                                   } else {
                                     echo "<td>" . $products['products_name'] . "</td>";
                                   }
@@ -1197,104 +1197,104 @@ switch (browser_family) {
 // Affiche le statut du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_PRODUCT_STATUS == 'True') {
                                     if ($products['products_status'] == '1') {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
                                     } else {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"1\"></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_status[" . $products['products_id'] . "]\" value=\"1\"></td>";
                                     }
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche le comparateur de prix du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_PRICE_COMPARISON == 'True') {
                                     if ($products['products_price_comparison'] == '1') {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
                                     } else {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"1\"></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_price_comparison[" . $products['products_id'] . "]\" value=\"1\"></td>";
                                     }
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche le comparateur de prix du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_ONLY_ONLINE == 'true') {
                                     if ($products['products_only_online'] == '1') {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"0\" ><input type=\"radio\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"1\" checked ></td>";
                                     } else {
-                                      echo "<td class=\"text-md-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"1\"></td>";
+                                      echo "<td class=\"text-center\"><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"0\" checked ><input type=\"radio\" style=\"background-color: #EEEEEE\" name=\"product_new_products_only_online[" . $products['products_id'] . "]\" value=\"1\"></td>";
                                     }
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche le poids du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_WEIGHT == 'True') {
-                                    echo "<td class=\"text-md-center\"><input type=\"text\" size=\"5\" name=\"product_new_weight[" . $products['products_id'] . "]\" value=\"" . $products['products_weight'] . "\"></td>";
+                                    echo "<td class=\"text-center\"><input type=\"text\" size=\"5\" name=\"product_new_weight[" . $products['products_id'] . "]\" value=\"" . $products['products_weight'] . "\"></td>";
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche la quantite du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_STOCK == 'True') {
-                                    echo "<td class=\"text-md-center\"><input type=\"text\" size=\"3\" name=\"product_new_quantity[" . $products['products_id'] . "]\" value=\"" . $products['products_quantity'] . "\"></td>";
+                                    echo "<td class=\"text-center\"><input type=\"text\" size=\"3\" name=\"product_new_quantity[" . $products['products_id'] . "]\" value=\"" . $products['products_quantity'] . "\"></td>";
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche la quantite minimum de commande du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_MIN_ORDER == 'True') {
-                                    echo "<td class=\"text-md-center\"><input type=\"text\" size=\"3\" name=\"new_products_min_qty_order[" . $products['products_id'] . "]\" value=\"" . $products['products_min_qty_order'] . "\"></td>";
+                                    echo "<td class=\"text-center\"><input type=\"text\" size=\"3\" name=\"new_products_min_qty_order[" . $products['products_id'] . "]\" value=\"" . $products['products_min_qty_order'] . "\"></td>";
                                   } else {
-                                    echo "<td  class=\"text-md-center\"></td>";
+                                    echo "<td  class=\"text-center\"></td>";
                                   }
 
 // Affiche l'images du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_IMAGE == 'True') {
-                                    echo "<td  class=\"text-md-center\"><input type=\"text\" size=\"8\" name=\"product_new_image[" . $products['products_id'] . "]\" value=\"" . $products['products_image'] . "\"></td>";
+                                    echo "<td  class=\"text-center\"><input type=\"text\" size=\"8\" name=\"product_new_image[" . $products['products_id'] . "]\" value=\"" . $products['products_image'] . "\"></td>";
                                   } else {
-                                    echo "<td  class=\"text-md-center\"></td>";
+                                    echo "<td  class=\"text-center\"></td>";
                                   }
 
 // Affiche le fabricant du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_MANUFACTURER == 'True') {
                                     if (CLICSHOPPING_APP_QUICKUPDATE_CQ_UPDATE_MANUFACTURER == 'True') {
-                                      echo '<td  class="text-md-center">' . HTML::selectMenu('product_new_manufacturer[' . $products['products_id'] . ']', $manufacturers_array, $products['manufacturers_id']) . '</td>';
+                                      echo '<td  class="text-center">' . HTML::selectMenu('product_new_manufacturer[' . $products['products_id'] . ']', $manufacturers_array, $products['manufacturers_id']) . '</td>';
                                     } else {
-                                      echo '<td  class="text-md-center">' . $manufacturer['manufacturers_name'] . '</td>';
+                                      echo '<td  class="text-center">' . $manufacturer['manufacturers_name'] . '</td>';
                                     }
                                   } else {
-                                    echo "<td  class=\"text-md-center\"></td>";
+                                    echo "<td  class=\"text-center\"></td>";
                                   }
 
 // Affiche le fabricant du produit
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_SUPPLIER == 'True') {
                                     if (CLICSHOPPING_APP_QUICKUPDATE_CQ_UPDATE_SUPPLIER == 'True') {
-                                      echo "<td class=\"text-md-center\">" . HTML::selectMenu("product_new_supplier[" . $products['products_id'] . "]\"", $suppliers_array, $products['suppliers_id']) . "</td>";
+                                      echo "<td class=\"text-center\">" . HTML::selectMenu("product_new_supplier[" . $products['products_id'] . "]\"", $suppliers_array, $products['suppliers_id']) . "</td>";
                                     } else {
-                                      echo "<td class=\"text-md-center\">" . $supplier['suppliers_name'] . "</td>";
+                                      echo "<td class=\"text-center\">" . $supplier['suppliers_name'] . "</td>";
                                     }
                                   } else {
-                                    echo "<td class=\"text-md-center\"></td>";
+                                    echo "<td class=\"text-center\"></td>";
                                   }
 
 // Affiche le prix du produit
                                   if (in_array($products['products_id'], $specials_array)) {
-                                    echo "<td class=\"text-md-right\">&nbsp;&nbsp;&nbsp;<a href=\"" . CLICSHOPPING::link(null, '?A&Marketing\Specials&Specials') . "\">" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/specials.gif', $CLICSHOPPING_QuickUpdate->getDef('text_quick_updates_specials')) . "</a>&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" value=\"" . $products['products_price'] . "\" disabled >" . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . "</td>";
+                                    echo "<td class=\"text-end\">&nbsp;&nbsp;&nbsp;<a href=\"" . CLICSHOPPING::link(null, '?A&Marketing\Specials&Specials') . "\">" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/specials.gif', $CLICSHOPPING_QuickUpdate->getDef('text_quick_updates_specials')) . "</a>&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" value=\"" . $products['products_price'] . "\" disabled >" . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . "</td>";
                                   } elseif ($products['products_percentage'] == '0') {
 
 
-//      echo "<td class=\"text-md-right\">&nbsp;&nbsp;&nbsp;<a href=\"" . CLICSHOPPING::link(null, '?A&Catalog\Products&Update&pID=' . $products['products_id'] . '&cPath=' . $categories_products[0]) . "\">" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/locked.gif', $CLICSHOPPING_QuickUpdate->getDef('text_quick_updates_locked')) . "</a>&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" value=\"" . $products['products_price'] . "\" disabled >" . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . "</td>";
+//      echo "<td class=\"text-end\">&nbsp;&nbsp;&nbsp;<a href=\"" . CLICSHOPPING::link(null, '?A&Catalog\Products&Update&pID=' . $products['products_id'] . '&cPath=' . $categories_products[0]) . "\">" . HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'icons/locked.gif', $CLICSHOPPING_QuickUpdate->getDef('text_quick_updates_locked')) . "</a>&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" value=\"" . $products['products_price'] . "\" disabled >" . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . "</td>";
 
 
                                   } else {
                                     if (isset($flag_spec)) {
-                                      echo "<td class=\"text-md-right\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" ";
+                                      echo "<td class=\"text-end\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" ";
                                       if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_MOUSE_OVER == 'True') {
                                         echo "onKeyUp=\"display_ttc('keyup', this.value" . ", " . $tax_rate . ", 1);\"";
                                       }
                                       echo " value=\"" . $price . "\">" . HTML::checkboxField('update_price[' . $products['products_id'] . ']', 'yes', 'yes', 'no') . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . "</td>";
                                     } else {
-                                      echo "<td class=\"text-md-right\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" ";
+                                      echo "<td class=\"text-end\">&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"text\" size=\"6\" name=\"product_new_price[" . $products['products_id'] . "]\" ";
                                       if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_MOUSE_OVER == 'True') {
                                         echo "onKeyUp=\"display_ttc('keyup', this.value" . ", " . $tax_rate . ", 1);\"";
                                       }
@@ -1340,12 +1340,12 @@ switch (browser_family) {
                         $price2 = $Qattributes->valueDecimal('customers_group_price');
 
                         if (empty($price2)) {
-                          echo '<td class="text-md-right">' . $CLICSHOPPING_QuickUpdate->getDef('no_price') . '</td>';
+                          echo '<td class="text-end">' . $CLICSHOPPING_QuickUpdate->getDef('no_price') . '</td>';
                         } else {
-                          echo '<td class="text-md-right">' . $price2 . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . '</td>';
+                          echo '<td class="text-end">' . $price2 . $CLICSHOPPING_QuickUpdate->getDef('text_no_taxe') . '</td>';
                         }
                       } else {
-                        echo '<td class="text-md-right">' . $CLICSHOPPING_QuickUpdate->getDef('no_price') . '</td>';
+                        echo '<td class="text-end">' . $CLICSHOPPING_QuickUpdate->getDef('no_price') . '</td>';
                       }
                     }
                   }
@@ -1354,16 +1354,16 @@ switch (browser_family) {
 // Affichage de la TVA
                                   if (CLICSHOPPING_APP_QUICKUPDATE_CQ_DISPLAY_TAX == 'True') {
                                     if (CLICSHOPPING_APP_QUICKUPDATE_CQ_UPDATE_TAX == 'True') {
-                                      echo "<td class=\"text-md-right\">" . HTML::selectMenu("product_new_tax[" . $products['products_id'] . "]\"", $tax_class_array, $products['products_tax_class_id']) . "</td>";
+                                      echo "<td class=\"text-end\">" . HTML::selectMenu("product_new_tax[" . $products['products_id'] . "]\"", $tax_class_array, $products['products_tax_class_id']) . "</td>";
                                     } else {
 
 
-                                      echo "<td class=\"text-md-right\">" . $tax_rate['tax_class_title'] . "</td>";
+                                      echo "<td class=\"text-end\">" . $tax_rate['tax_class_title'] . "</td>";
 
 
                                     }
                                   } else {
-                                    echo "<td class=\"text-md-right\"></td>";
+                                    echo "<td class=\"text-end\"></td>";
                                   }
 
 // Afficher la visluation du produit
@@ -1420,9 +1420,9 @@ switch (browser_family) {
   <div class="row">
     <div class="col-md-12">
       <div
-        class="col-md-6 float-md-left pagenumber hidden-xs TextDisplayNumberOfLink"><?php echo $Qproducts->getPageSetLabel($CLICSHOPPING_QuickUpdate->getDef('text_display_number_of_link')); ?></div>
+        class="col-md-6 float-start pagenumber hidden-xs TextDisplayNumberOfLink"><?php echo $Qproducts->getPageSetLabel($CLICSHOPPING_QuickUpdate->getDef('text_display_number_of_link')); ?></div>
       <div
-        class="float-md-right text-md-right"> <?php echo $Qproducts->getPageSetLinks(CLICSHOPPING::getAllGET(array('page', 'info', 'x', 'y'))); ?></div>
+        class="float-end text-end"> <?php echo $Qproducts->getPageSetLinks(CLICSHOPPING::getAllGET(array('page', 'info', 'x', 'y'))); ?></div>
     </div>
   </div>
 </div>

@@ -36,7 +36,7 @@
             class="col-md-1 logoHeading"><?php echo HTML::image($CLICSHOPPING_Template->getImageDirectory() . 'categories/priceupdate.gif', $CLICSHOPPING_QuickUpdate->getDef('heading_title'), '40', '40'); ?></span>
           <span
             class="col-md-4 pageHeading"><?php echo '&nbsp;' . $CLICSHOPPING_QuickUpdate->getDef('heading_title'); ?></span>
-          <span class="col-md-7 text-md-right">
+          <span class="col-md-7 text-end">
 <?php
   echo HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_configure'), null, CLICSHOPPING::link(null, 'A&Catalog\QuickUpdate'), 'primary') . ' ';
   echo HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_quick_update'), null, $CLICSHOPPING_QuickUpdate->link('QuickUpdate'), 'success');
@@ -101,7 +101,7 @@
           echo HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_save'), null, null, 'success');
 
           if ($CLICSHOPPING_QuickUpdate->getConfigModuleInfo($current_module, 'is_uninstallable') === true) {
-            echo '<span class="float-md-right">' . HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_dialog_uninstall'), null, '#', 'warning', ['params' => 'data-toggle="modal" data-target="#ppUninstallModal"']) . '</span>';
+            echo '<span class="float-end">' . HTML::button($CLICSHOPPING_QuickUpdate->getDef('button_dialog_uninstall'), null, '#', 'warning', ['params' => 'data-toggle="modal" data-target="#ppUninstallModal"']) . '</span>';
           }
         ?>
       </div>

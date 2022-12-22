@@ -48,7 +48,7 @@
         </div>
         <div class="separator"></div>
 
-        <div class="col-md-12 text-md-center">
+        <div class="col-md-12 text-center">
           <div class="form-group">
             <div class="col-md-12">
               <?php
